@@ -7,7 +7,9 @@
 #include "WProgram.h"
 #endif
 
+#ifndef ESP32
 #include <SoftwareSerial.h>
+#endif
 #include <IPAddress.h>
 
 struct PZEMCommand {
@@ -20,7 +22,9 @@ struct PZEMCommand {
 class PZEM004T
 {
 public:
+#ifndef ESP32
     PZEM004T(uint8_t receivePin, uint8_t transmitPin);
+#endif
     PZEM004T(HardwareSerial *port);
     ~PZEM004T();
 
