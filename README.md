@@ -54,3 +54,8 @@ Reply data: A2 08 98 00 00 00 42
 Send command: B3 C0 A8 01 01 00 1D     
 Reply data: A3 01 86 9F 00 00 C9     
 *Note*: Reply energy data is D1D2D3 = 01 86 9F, converts 01 86 9F to decimal is 99999, so the accumulated power is 99999Wh.   
+
+## ESP8266
+
+ESP8266 not have official SoftwareSerial library so if you want use SoftwareSerial library you can manual install [EspSoftwareSerial](https://github.com/plerup/espsoftwareserial).
+
